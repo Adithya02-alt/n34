@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         stage('checkout') {
-            steps { git credentialsId: 'dockerhub1', url: 'git@github.com:Adithya02-alt/n34.git', branch: 'main' }
+            steps { git credentialsId: 'dockerhub1', url: 'https://github.com/Adithya02-alt/n34.git', branch: 'main' }
         }
         stage('Build Docker Image') {
             steps {
